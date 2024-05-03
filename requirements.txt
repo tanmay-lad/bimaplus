@@ -16,4 +16,5 @@ sentence-transformers==2.2.2
 chromadb
 pysqlite3-binary
 google.generativeai
+google.api_core
 IPython
