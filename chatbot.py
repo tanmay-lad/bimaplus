@@ -77,7 +77,7 @@ def setup_sidebar():
         ("Co-payment", "Room rent", "Restoration benefits", "Disease wise sublimits", "Free health checkups", 
          "Waiting periods", "Pre and post hopitalization care", "No claim bonus", "OPD benefits", "Daycare treatment"
          ),
-        index=None)
+        index=None,)
     user_selection['get_feature_details'] = sideb.button("Get feature details")
     if user_selection['get_feature_details']:
         if not user_selection['policy_feature']:
@@ -100,7 +100,7 @@ def setup_sidebar():
     user_selection['company'] = sideb.selectbox(
         "Select insurance company",
         ("SBI", "HDFC"),
-        index=None)
+        index=None,)
     #sideb.write(user_selection['company'])
     policy_list = {}
     policy_list["SBI"] = ("Arogya Supreme", "Super Health")
@@ -109,7 +109,7 @@ def setup_sidebar():
         user_selection['policy'] = sideb.selectbox(
             "Select company policy",
             policy_list[user_selection['company']],
-            index=None)
+            index=None,)
     #sideb.write(user_selection['policy'])
     user_selection['select_policy_document'] = sideb.button("Search policy document")
     if user_selection['select_policy_document']:
