@@ -15,6 +15,13 @@ sentence-transformers==2.2.2
 
 chromadb
 pysqlite3-binary
+
 google.generativeai
+python.dotenv
 google.api_core
 IPython
+
+#gcsfs
+#st-files-connection
+
+#google-auth-oauthlib
