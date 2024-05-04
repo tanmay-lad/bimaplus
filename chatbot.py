@@ -18,6 +18,7 @@ import os
 
 from IPython.display import Markdown
 from chromadb import Documents, EmbeddingFunction, Embeddings
+#from st_files_connection import FilesConnection
 
 class GeminiEmbeddingFunction(EmbeddingFunction):
     def __call__(self, input: Documents) -> Embeddings:
@@ -32,7 +33,7 @@ def get_relevant_passage(query, db, user_selection):
     filenames = {'key_factors': "Health insurance basics.pdf", 
                  'get_feature_details': "Health insurance basics.pdf", 
                  'compare_insurers': "Health insurance basics.pdf", 
-                 'claim_ratios': "Health insurance basics.pdf", 
+                 'claim_ratios': "Claim ratios.pdf", 
                  'tax_benefits': "Health insurance basics.pdf", 
                  'select_policy_document': f"{user_selection['company']}_{user_selection['policy']}.pdf"
                  }
@@ -214,7 +215,7 @@ def main():
     query_selection = get_relevant_query(user_selection)
 
     # Display fixed user input box at the bottom
-    query_input = st.chat_input("Ask a Question from the PDF Files")
+    query_input = st.chat_input("Ask a query about insurance policies")
     
     # Query based on user selection from given options or user question input
     query, answer = None, None
