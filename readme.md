@@ -1,15 +1,9 @@
-# MultiPDF Chat App
-
-> You can find the tutorial for this project on [YouTube](https://youtu.be/dXxQ0LR-3Hg).
-
 ## Introduction
 ------------
-The MultiPDF Chat App is a Python application that allows you to chat with multiple PDF documents. You can ask questions about the PDFs using natural language, and the application will provide relevant responses based on the content of the documents. This app utilizes a language model to generate accurate answers to your queries. Please note that the app will only respond to questions related to the loaded PDFs.
+The Bimaplus Chat App is a Python application that allows you to chat with multiple PDF documents. You can ask questions about the PDFs using natural language, and the application will provide relevant responses based on the content of the documents. This app utilizes a language model to generate accurate answers to your queries. Please note that the app will only respond to questions related to the loaded PDFs.
 
 ## How It Works
 ------------
-
-![MultiPDF Chat App Diagram](./docs/PDF-LangChain.jpg)
 
 The application follows these steps to provide responses to your questions:
 
@@ -41,7 +35,7 @@ OPENAI_API_KEY=your_secrit_api_key
 
 ## Usage
 -----
-To use the MultiPDF Chat App, follow these steps:
+To use the Bimaplus Chat App, follow these steps:
 
 1. Ensure that you have installed the required dependencies and added the OpenAI API key to the `.env` file.
 
